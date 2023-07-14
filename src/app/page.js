@@ -4,11 +4,11 @@ export default function Home() {
   return (
     <main class="px-3 py-2 w-screen">
       <Header />
-      <div class="h-screen border-2">
+      <div class="">
 
-        <div class="flex flex-col justify-center">
-          <h1 class="font-display border border-red-500 text-9xl pb-2" >Hi, I`m Luke</h1>
-          <h2 class="font-thin text-4xl border border-red-500">Frontend, Fullstack, UI/UX, Design</h2>
+        <div class="h-screen flex flex-col justify-center pt-8">
+          <h1 class="font-display text-9xl pb-2" >Hi, I`m Luke</h1>
+          <h2 class="font-thin text-4xl">Frontend, Fullstack, UI/UX, Design</h2>
         </div>
 
         <div>
