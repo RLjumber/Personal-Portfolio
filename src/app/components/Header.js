@@ -7,7 +7,7 @@ export default function Header() {
     const pathname = usePathname();
 
     return (
-        <nav class="w-full sticky top-0 grid grid-cols-2 gap-4 border">
+        <nav class="w-full fixed top-0 grid grid-cols-2 gap-4 border">
             <a href="/" class="hover:text-emerald-800">R. Jumber</a>
             <div>
                 {pathname === "/" ? <a href="/" class="text-emerald-500 hover:text-emerald-500">Work</a> : <a href="/" class="hover:text-emerald-500">Work</a>}
