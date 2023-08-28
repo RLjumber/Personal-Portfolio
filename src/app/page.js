@@ -2,9 +2,9 @@ import Header from "./components/Header";
 
 export default function Home() {
   return (
-    <main class="px-3 py-2 w-screen">
+    <main class="px-3 py-2 w-full">
       <Header />
-      <div class="">
+      <div class="border border-green-400">
 
         <div class="h-screen flex flex-col justify-center pt-8">
           <h1 class="font-display text-9xl pb-2" >Hi, I`m Luke</h1>
