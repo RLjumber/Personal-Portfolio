@@ -6,8 +6,8 @@ export default function Home() {
       <Header />
       <div class="border border-green-400">
 
-        <div class="h-screen flex flex-col justify-center pt-8">
-          <h1 class="font-display text-9xl pb-2" >Hi, I`m Luke</h1>
+        <div class="h-screen flex flex-col justify-center pb-10">
+          <h1 class="font-display text-9xl" >Hi, I`m Luke</h1>
           <h2 class="font-thin text-4xl">Frontend, Fullstack, UI/UX, Design</h2>
         </div>
 
