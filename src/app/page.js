@@ -3,7 +3,7 @@ import Landing from "./components/Landing";
 
 export default function Home() {
   return (
-    <main class="px-3 py-2 w-full">
+    <main class="p-4 w-full">
       <Header />
       <Landing />
     </main>
