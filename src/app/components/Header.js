@@ -1,10 +1,11 @@
-"use client"
-
+"use client";
+import { PlusCircleIcon, MinusCircleIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
   const pathname = usePathname();
 
   const toggleDropdown = () => {
@@ -16,18 +17,9 @@ export default function Header() {
       <a href="/" className="hover:text-emerald-800">
         Jumber Design
       </a>
-      <div className="flex flex-col items-end absolute end-0 z-10 text-end">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6 focus:cursor-pointer"
-          onClick={toggleDropdown}
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
+      <div className="border flex flex-col items-end absolute end-0 z-10 text-end" onClick={toggleDropdown}>
+        {isDropdownOpen ? <MinusCircleIcon /> : <PlusCircleIcon />}
+
         {isDropdownOpen && (
           <div className="flex flex-col mt-2">
             {pathname === "/" ? (
