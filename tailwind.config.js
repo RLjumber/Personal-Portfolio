@@ -7,9 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
-        fontFamily: {
-          "display": "Calistoga"
-        }
+      colors: {
+        bkg: 'hsl(var(--color-bkg))',
+        primary: 'hsl(var(--color-primary))',
+        secondary: 'hsl(var(--color-secondary))',
+        accent: 'hsl(var(--color-accent))',
+      },
+      fontFamily: {
+        display: ['Calistoga', 'sans-serif'],
+      },
     },
   },
   plugins: [],

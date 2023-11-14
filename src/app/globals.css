@@ -4,21 +4,49 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer base {
+  :root {
+    --color-bkg: 225deg 6% 13%;
+    --color-primary: 0deg 0% 100%;
+    --color-secondary: 204deg 4% 25%;
+    --color-accent: 284deg 85% 75%;
+  }  
+}
+/* Dark is the default so the same as above same as above */
+:root [theme-data='dark'] {
+  --color-bkg: 225deg 6% 13%;
+  --color-primary: 0deg 0% 100%;
+  --color-secondary: 204deg 4% 25%;
+  --color-accent: 284deg 85% 75%;
 }
 
-@media (prefers-color-scheme: dark) {
+:root [theme-data='light'] {
+  --color-bkg: 0deg 0% 100%;
+  --color-primary: 0deg 0% 7%;
+  --color-secondary: 0deg 0% 22%;
+  --color-accent: 342deg 73% 54%;
+}
+
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --color-bkg: 255deg 115% 179%;
+    --color-primary: 111deg 114% 185%;
+    --color-secondary: 288deg 95.8% 90.6%;
+    --color-accent: 168deg 83.8% 78.2%;
   }
 }
 
-body {
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bkg: 111deg 114% 185%;
+    --color-primary: 255deg 115% 179%;
+    --color-secondary: 288deg 95.8% 90.6%;
+    --color-accent: 168deg 83.8% 78.2%;
+  }
+}
+ 
+
+ body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -26,4 +54,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */

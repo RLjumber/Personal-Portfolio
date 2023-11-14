@@ -4,6 +4,7 @@ import GroupWorkOutlined from '@mui/icons-material/GroupWorkOutlined';
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
+
 export default function Header() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -13,11 +14,12 @@ export default function Header() {
     setIsDropdownOpen((prevState) => !prevState);
   };
 
+
   return (
-    <nav className="sticky flex flex-nowrap top-0 z-10 justify-between bg-transparent">
-      <a href="/" className="font-extralight hover:text-emerald-800 text-2xl">Navigational Bar</a>
-      <div className="flex flex-col items-end absolute end-0 z-10 text-end" onClick={toggleDropdown}>
-        <GroupWorkOutlined className={` h-10 w-10 transition-transform transform ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`} />
+    <nav className=" sticky flex flex-nowrap top-0 z-10 justify-between bg-transparent">
+      
+      <div className="p-4 flex flex-col items-end absolute end-0 z-10 text-end" onClick={toggleDropdown}>
+        <GroupWorkOutlined className={` text-accent h-16 w-16 transition-transform transform ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`} />
 
         {isDropdownOpen && (
           <div className="flex flex-col mt-2">
