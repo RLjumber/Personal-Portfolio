@@ -22,34 +22,48 @@ export default function Header() {
         <GroupWorkOutlined className={` text-accent h-16 w-16 transition-transform transform ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`} />
 
         {isDropdownOpen && (
-          <div className="flex flex-col mt-2">
+          <div className="flex flex-col mt-2 text-3xl transition-all">
+
             {pathname === "/" ? (
-              <a href="/" className="text-emerald-500 hover:text-emerald-500">
+              <a href="/" className="text-accent">
+                Home
+              </a>
+            ) : (
+              <a href="/" className="text-primary hover:text-accent">
+                Home
+              </a>
+            )}
+
+            {pathname === "/Work" ? (
+              <a href="/Work" className="text-accent">
                 Work
               </a>
             ) : (
-              <a href="/" className="hover:text-emerald-500">
+              <a href="/Work" className="text-primary hover:text-accent">
                 Work
               </a>
             )}
+
             {pathname === "/about" ? (
-              <a href="/about" className="text-emerald-500 hover:text-emerald-500">
+              <a href="/about" className="text-accent">
                 About
               </a>
             ) : (
-              <a href="/about" className="hover:text-emerald-500">
+              <a href="/about" className="text-primary hover:text-accent">
                 About
               </a>
             )}
+
             {pathname === "/contact" ? (
-              <a href="/contact" className="text-emerald-500 hover:text-emerald-500">
+              <a href="/contact" className="text-accent">
                 Contact
               </a>
             ) : (
-              <a href="/contact" className="hover:text-emerald-500">
+              <a href="/contact" className="text-primary hover:text-accent">
                 Contact
               </a>
             )}
+
           </div>
         )}
       </div>
