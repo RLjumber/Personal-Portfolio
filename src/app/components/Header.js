@@ -1,5 +1,6 @@
 "use client";
-import { PlusCircleIcon, MinusCircleIcon } from "@heroicons/react/24/outline";
+
+import GroupWorkOutlined from '@mui/icons-material/GroupWorkOutlined';
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
@@ -13,12 +14,10 @@ export default function Header() {
   };
 
   return (
-    <nav className="sticky flex flex-nowrap top-0 border border-red-500 justify-between">
-      <a href="/" className="hover:text-emerald-800">
-        Jumber Design
-      </a>
-      <div className="border flex flex-col items-end absolute end-0 z-10 text-end" onClick={toggleDropdown}>
-        {isDropdownOpen ? <MinusCircleIcon /> : <PlusCircleIcon />}
+    <nav className="sticky flex flex-nowrap top-0 z-10 justify-between bg-transparent">
+      <a href="/" className="font-extralight hover:text-emerald-800 text-2xl">Navigational Bar</a>
+      <div className="flex flex-col items-end absolute end-0 z-10 text-end" onClick={toggleDropdown}>
+        <GroupWorkOutlined className={` h-10 w-10 transition-transform transform ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`} />
 
         {isDropdownOpen && (
           <div className="flex flex-col mt-2">

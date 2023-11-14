@@ -1,13 +1,13 @@
 export default function Landing() {
     return (
-        <main>
-            <section id="intro" class="h-screen">
-                <div class=" h-full flex flex-col justify-center pb-10 pb">
+        <main className=" bg-neutral-600">
+            <section id="intro" class=" h-screen">
+                <div class="h-full flex flex-col justify-center pb-20 pb">
                     <h1 class="font-display text-9xl" >Hi, I`m Luke</h1>
                     <h2 class=" font-light text-4xl">Welcome To My Digital Portfolio</h2>
                 </div>
             </section>
-            <section id="who-and-what" class="border-t-2 border pt-10">
+            <section id="who-and-what" class="border-t-2 pt-10">
                 <div class="flex flex-col">
                     <h3 class="font-display text-5xl pb-10">What I Do</h3>
                     <ul class="flex flex-col h-full w-full items-end text-5xl font-light justify-evenly">
