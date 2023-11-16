@@ -22,7 +22,7 @@ export default function Header() {
         <GroupWorkOutlined className={` text-accent h-16 w-16 transition-transform transform ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`} />
 
         {isDropdownOpen && (
-          <div className="flex flex-col mt-2 text-3xl transition-all">
+          <div className="flex flex-col mt-2 text-3xl">
 
             {pathname === "/" ? (
               <a href="/" className="text-accent">
