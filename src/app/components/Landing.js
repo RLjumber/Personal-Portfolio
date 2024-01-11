@@ -1,29 +1,12 @@
 import { useState } from "react";
-import NightlightIcon from '@mui/icons-material/Nightlight';
-import LightModeIcon from '@mui/icons-material/LightMode';
 import { InsertEmoticon } from "@mui/icons-material";
 
 
 export default function Landing() {
-    const [themeData, setThemeData] = useState("dark");
-    
-
-    const toggleTheme = () => {
-        if (themeData === "dark") {
-            setThemeData("light");
-        } else {
-            setThemeData("dark");
-        }
-    }
 
 
     return (
-        <main className="bg-bkg" theme-data={themeData}>
-            <div className="p-4">
-                <a onClick={
-                    () => toggleTheme()
-                }
-                className="fixed">{themeData=="light" && <NightlightIcon className=" text-indigo-600 h-16 w-16"/>} { themeData==="dark" && <LightModeIcon className=" text-amber-400 h-16 w-16"/> }</a>
+            <div className="p-4 bg-bkg">
                 <section id="intro" className=" h-screen">
                     <div className="h-full flex flex-col justify-center pb-20 pb">
                         <h1 className="font-display text-9xl text-accent" >Hi,<br/> I`m Luke</h1>
@@ -44,6 +27,5 @@ export default function Landing() {
                     </div>
                 </section>
             </div>
-      </main>
     )
 }

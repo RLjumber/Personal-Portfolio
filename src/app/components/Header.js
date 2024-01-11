@@ -35,11 +35,11 @@ export default function Header() {
             )}
 
             {pathname === "/Work" ? (
-              <a href="/Work" className="text-accent">
+              <a href="/work" className="text-accent">
                 Work
               </a>
             ) : (
-              <a href="/Work" className="text-primary hover:text-accent">
+              <a href="/work" className="text-primary hover:text-accent">
                 Work
               </a>
             )}
