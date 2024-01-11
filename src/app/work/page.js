@@ -5,6 +5,7 @@ export default function Work() {
         <main>
             <Header />
             <div>Hello! from work!</div>
+            <p>Adding content to test</p>
         </main>
     )
 }
