@@ -16,9 +16,9 @@ export default function Header() {
 
 
   return (
-    <nav className=" sticky flex flex-nowrap top-0 z-10 justify-between bg-transparent">
+    <nav className=" sticky flex flex-nowrap top-0 z-10 justify-between bg-transparent border border-red-500">
       
-      <div className="p-4 flex flex-col items-end absolute end-0 z-10 text-end" onClick={toggleDropdown}>
+      <div className="p-4 flex flex-col items-end absolute end-0 text-end" onClick={toggleDropdown}>
         <GroupWorkOutlined className={` text-accent h-16 w-16 transition-transform transform ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`} />
 
         {isDropdownOpen && (

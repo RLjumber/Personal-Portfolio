@@ -28,12 +28,11 @@ const [themeData, setThemeData] = useState("dark");
 
   return (
     <main className="w-full" theme-data={themeData}>
-      <div>
+      
       <a onClick={
                     () => themeSetter()
                 }
-                className="fixed bottom-0 right-0 md:top-0 md:left-0 m-4 h-16 w-16">{themeData=="light" && <NightlightIcon className=" text-indigo-600 w-full h-full"/>} { themeData==="dark" && <LightModeIcon className=" text-amber-400 w-full h-full"/> }</a>
-      </div>
+                className="fixed bottom-0 right-0 md:top-0 md:left-0 m-4 h-16 w-16 object-fill">{themeData=="light" && <NightlightIcon className=" text-indigo-600 w-full h-full"/>} { themeData==="dark" && <LightModeIcon className=" text-amber-400 w-full h-full"/> }</a>
       <Header />
       <Landing />
     </main>
