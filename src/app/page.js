@@ -32,7 +32,7 @@ const [themeData, setThemeData] = useState("dark");
       <a onClick={
                     () => themeSetter()
                 }
-                className="fixed bottom-0 right-0 md:top-0 md:left-0 m-4 h-16 w-16 object-fill">{themeData=="light" && <NightlightIcon className=" text-indigo-600 w-full h-full"/>} { themeData==="dark" && <LightModeIcon className=" text-amber-400 w-full h-full"/> }</a>
+                className="fixed bottom-0 right-0 md:top-0 md:left-0 m-4 h-16 w-16 object-fill">{themeData=="light" && <NightlightIcon style={{height: "4rem", width: "4rem"}} className=" text-indigo-600 w-full h-full"/>} { themeData==="dark" && <LightModeIcon style={{height: "4rem", width: "4rem"}}  className=" text-amber-400 w-full h-full"/> }</a>
       <Header />
       <Landing />
     </main>

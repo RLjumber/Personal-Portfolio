@@ -16,10 +16,10 @@ export default function Header() {
 
 
   return (
-    <nav className=" sticky flex flex-nowrap top-0 z-10 justify-between bg-transparent border border-red-500">
+    <nav className=" sticky flex flex-nowrap top-0 z-10 justify-between bg-transparent">
       
       <div className="p-4 flex flex-col items-end absolute end-0 text-end" onClick={toggleDropdown}>
-        <GroupWorkOutlined className={` text-accent h-16 w-16 transition-transform transform ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`} />
+        <GroupWorkOutlined style={{height: "4rem", width: "4rem"}} className={` text-accent object-cover transition-transform transform ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`} />
 
         {isDropdownOpen && (
           <div className="flex flex-col mt-2 text-3xl">
