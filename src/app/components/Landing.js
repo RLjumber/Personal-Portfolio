@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { InsertEmoticon } from "@mui/icons-material";
+import ThemeSwitch from "./ThemeSwitch";
 
 
 export default function Landing() {
@@ -10,6 +11,7 @@ export default function Landing() {
                 <section id="intro" className=" h-screen">
                     <div className="h-full flex flex-col justify-center pb-20 pb">
                         <h1 className="font-display text-9xl text-accent" >Hi,<br/> I`m Luke</h1>
+                        <ThemeSwitch  className="border border-red-500"/>
                         <h2 className="text-primary font-light text-4xl">Welcome To My Digital Portfolio</h2>
                     </div>
                 </section>

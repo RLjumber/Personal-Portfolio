@@ -1,6 +1,6 @@
-import { data } from 'autoprefixer'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import ThemeProvider from './theme-provider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,8 +12,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
 
   return (
-    <html lang="en">
-      <body className={inter.className} theme-data="light">{children}</body>
+    <html lang="en" suppressHydrationWarning>
+
+      <body className={inter.className}>
+        <ThemeProvider>
+        {children}
+        </ThemeProvider>
+      </body>
     </html>
   )
 }
