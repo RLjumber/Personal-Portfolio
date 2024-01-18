@@ -1,4 +1,4 @@
-import Header from "../components/Header";
+import Header from "../home/components/Header";
 
 export default function Work() {
 
@@ -18,9 +18,12 @@ export default function Work() {
             <main>
                 <h1>Work</h1>
                 <section>
-                    <h2>Languages: </h2>
+                    <h2>Languages</h2>
                     <ul>{languageList}</ul>
                     <ul>{toolsList}</ul>
+                </section>
+                <section>
+                    <h2>Projects</h2>
                 </section>
             </main>
             
